@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg-color:#FFF9F5;
+    --primary: #00838F;
+    --primary-black: #002528;
+    --primary-gray: #6C757D;
+  ---primary-red: #EB1948;
+  --secondary: #6c757d;
+  --success: #198754;
+  --warning: #ffc107;
+  --light: #f8f9fa;
+  --color-dark: #212529;
+  --color-black:#002528;
+  --color-white: #fff;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Open Sans', sans-serif;
+}
