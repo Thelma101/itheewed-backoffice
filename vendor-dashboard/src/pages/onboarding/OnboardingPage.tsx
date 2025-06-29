@@ -1,10 +1,10 @@
-import NavLogo from "@/components/NavLogo";
+import NavLogo from "@/components/onboarding/NavLogo";
 import type React from "react";
-import OnboardingGallery from "@/components/OnboardingGallery";
+import OnboardingGallery from "@/components/onboarding/OnboardingGallery";
 import '@/index.css'
 import { useState } from "react";
-import SignIn from "@/components/SignIn";
-import SignUp from "@/components/SignUp";
+import SignIn from "@/components/onboarding/SignIn";
+import SignUp from "@/components/onboarding/SignUp";
 
 const images = [
     { id: 1, name: 'Venue', image: 'https://res.cloudinary.com/dfp5thr3y/image/upload/v1750539059/venue_ptzzou.svg' },
