@@ -16,22 +16,25 @@ const images = [
 
 const OnboardingPage: React.FC = () => {
     const [isSignIn, setIsSignIn] = useState(true);
+    
+    const toggleToSignUp = () => setIsSignIn(false);
+    const toggleToSignIn = () => setIsSignIn(true);
+    
     return (
-        <section className="min-h-screen bg-[#D9D9D9] flex flex-col">
+        <section className="min-h-screen bg-bg-background flex flex-col">
             {/* Nav */}
-            <div className="w-full py-6 px-4 bg-[#D9D9D9]">
+            <div className="w-full py-6 px-4 bg-bg-background">
                 <NavLogo />
             </div>
             {/* Split Screen */}
-            <div className="flex flex-1 flex-col md:flex-row w-full bg-[#D9D9D9]">
+            <div className="flex flex-1 flex-col lg:flex-row w-full bg-background">
                 {/* Gallery */}
-                <div className="md:w-1/2 w-full flex items-center justify-center bg-[#D9D9D9] p-4 md:p-8">
+                <div className="lg:w-1/2 w-full flex items-center justify-center bg-background p-4 lg:p-8">
                     <OnboardingGallery />
                 </div>
                 {/* Form */}
-                <div className="md:w-1/2 w-full flex items-center justify-center bg-[#D9D9D9] p-4 md:p-8">
-                   {/* { isSignIn ? <SignIn /> : <SignUp /> } */}
-                   <SignUp />
+                <div className="lg:w-1/2 w-full flex items-center justify-start bg-background p-4 lg:p-8 lg:pl-16">
+                   { isSignIn ? <SignIn onToggleSignUp={toggleToSignUp} /> : <SignUp onToggleSignIn={toggleToSignIn} /> }
                 </div>
             </div>
         </section>
