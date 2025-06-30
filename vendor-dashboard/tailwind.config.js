@@ -11,10 +11,15 @@ export default {
         'primary-black': 'var(--primary-black)',
         'primary-red': 'var(--primary-red)',
         'color-focus': 'var(--color-focus)',
-        'bg-background': 'var(--bg-background)',
+        // 'bg-background': 'var(--bg-background)',
         'color-dark': 'var(--color-dark)',
         'color-black': 'var(--color-black)',
         
+      },
+      fonts: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+        mono: ['Fira Code', 'monospace'],
       },
     },
   },

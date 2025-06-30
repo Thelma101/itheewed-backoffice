@@ -19,6 +19,12 @@
   /* [#CCFDF2] */
 }
 
+body {
+  background-color: var(--bg-background);
+  font-family: "Open Sans", sans-serif;
+  color: var(--color-dark);
+}
+
 h1,
 h2,
 h3,

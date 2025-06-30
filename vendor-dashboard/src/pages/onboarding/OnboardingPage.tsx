@@ -21,19 +21,19 @@ const OnboardingPage: React.FC = () => {
     const toggleToSignIn = () => setIsSignIn(true);
     
     return (
-        <section className="min-h-screen bg-bg-background flex flex-col">
+        <section className="min-h-screen  flex flex-col">
             {/* Nav */}
-            <div className="w-full py-6 px-4 bg-bg-background">
+            <div className="w-full py-6 px-4 ">
                 <NavLogo />
             </div>
             {/* Split Screen */}
-            <div className="flex flex-1 flex-col lg:flex-row w-full bg-background">
+            <div className="flex flex-1 flex-col lg:flex-row w-full ">
                 {/* Gallery */}
-                <div className="lg:w-1/2 w-full flex items-start justify-start bg-background p-4 lg:p-8 md:mt-12 md:ml-10">
+                <div className="lg:w-1/2 w-full flex items-start justify-start  p-4 lg:p-8 md:mt-12 md:ml-10">
                     <OnboardingGallery />
                 </div>
                 {/* Form */}
-                <div className="lg:w-1/2 w-full flex items-start justify-center bg-background p-4 lg:p-8 lg:pl-16">
+                <div className="lg:w-1/2 w-full flex items-start justify-center">
                    { isSignIn ? <SignIn onToggleSignUp={toggleToSignUp} /> : <SignUp onToggleSignIn={toggleToSignIn} /> }
                 </div>
             </div>
