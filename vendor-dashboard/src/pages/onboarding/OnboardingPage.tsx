@@ -29,11 +29,11 @@ const OnboardingPage: React.FC = () => {
             {/* Split Screen */}
             <div className="flex flex-1 flex-col lg:flex-row w-full bg-background">
                 {/* Gallery */}
-                <div className="lg:w-1/2 w-full flex items-center justify-center bg-background p-4 lg:p-8">
+                <div className="lg:w-1/2 w-full flex items-start justify-start bg-background p-4 lg:p-8 md:mt-12 md:ml-10">
                     <OnboardingGallery />
                 </div>
                 {/* Form */}
-                <div className="lg:w-1/2 w-full flex items-center justify-start bg-background p-4 lg:p-8 lg:pl-16">
+                <div className="lg:w-1/2 w-full flex items-start justify-center bg-background p-4 lg:p-8 lg:pl-16">
                    { isSignIn ? <SignIn onToggleSignUp={toggleToSignUp} /> : <SignUp onToggleSignIn={toggleToSignIn} /> }
                 </div>
             </div>
